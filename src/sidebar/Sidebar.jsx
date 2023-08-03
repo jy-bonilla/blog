@@ -11,7 +11,21 @@ export default function Sidebar() {
                 </p>
             </div>
             <div className="sidebarItem">
-                <span className="sidebarTitle">A</span>
+                <span className="sidebarTitle">CATEGORIES</span>
+                <ul className="sidebarList">
+                    <li className="sidebarListItem">JavaScript</li>
+                    <li className="sidebarListItem">PYTHON</li>
+                    <li className="sidebarListItem">Java</li>
+                    <li className="sidebarListItem">Tech</li>
+                </ul>
+            </div>
+            <div className="sidebarItem">
+                <span className="sidebarTitle">Contact Me</span>
+                <div className="sidebarSocial">
+                    <i class="sidebarIcon fa-brands fa-square-github"></i>
+                    <i className="sidebarIcon fa-brands fa-square-x-twitter"></i>
+                    <i className="sidebarIcon fa-solid fa-envelope"></i>
+                </div>
             </div>
         </div>
     )
