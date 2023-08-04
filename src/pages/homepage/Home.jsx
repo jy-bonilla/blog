@@ -5,15 +5,12 @@ import './home.css'
 
 export default function Home() {
     return (
-        <div className='home'>
-            <>
-                <Header />
-                <div className="home">
-                    <Posts />
-                    <Sidebar />
-                </div>
-            </>
-
-        </div>
+        <>
+            <Header />
+            <div className="home">
+                <Posts />
+                <Sidebar />
+            </div>
+        </>
     )
 }
