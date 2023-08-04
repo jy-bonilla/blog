@@ -4,7 +4,7 @@ export default function Topbar() {
     return (
         <div className="top">
             <div className="topLeft">
-                <i class="topIcon fa-brands fa-square-github"></i>
+                <i className="topIcon fa-brands fa-square-github"></i>
                 <i className="topIcon fa-brands fa-square-x-twitter"></i>
                 <i className="topIcon fa-solid fa-envelope"></i>
             </div>
@@ -18,7 +18,7 @@ export default function Topbar() {
             </div>
             <div className="topRight">
                 <img className="topImg" src="assets/profilePic.png" alt="developers photograph" />
-                <i class="topSearchIcon fa-solid fa-magnifying-glass"></i>
+                <i className="topSearchIcon fa-solid fa-magnifying-glass"></i>
             </div>
         </div>
     )

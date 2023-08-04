@@ -22,7 +22,7 @@ export default function Sidebar() {
             <div className="sidebarItem">
                 <span className="sidebarTitle">Contact Me</span>
                 <div className="sidebarSocial">
-                    <i class="sidebarIcon fa-brands fa-square-github"></i>
+                    <i className="sidebarIcon fa-brands fa-square-github"></i>
                     <i className="sidebarIcon fa-brands fa-square-x-twitter"></i>
                     <i className="sidebarIcon fa-solid fa-envelope"></i>
                 </div>

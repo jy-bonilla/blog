@@ -7,6 +7,7 @@
     display: flex;
     align-items: center;
     font-family: 'Josefin Sans', sans-serif;
+    z-index: 999;
 }
 
 .topCenter {
@@ -55,4 +56,13 @@
     color: #666;
     cursor: pointer;
     margin-left: 15px;
+}
+
+.topImg {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 15px;
+    cursor: pointer;
 }
