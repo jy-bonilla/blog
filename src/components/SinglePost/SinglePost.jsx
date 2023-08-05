@@ -12,11 +12,11 @@ export default function SinglePost() {
                         <i className="singlePostIcon fa-regular fa-trash-can"></i>
                     </div>
                 </h1>
-                <div className="classnameSinglePostInfo">
+                <div className="singlePostInfo">
                     <span className="singlePostAuthor">Author: <b>Bonilla</b></span>
                     <span className="singlePosDate"> 1 hour ago</span>
                 </div>
-                <p>
+                <p className="singlePostDesc">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis facilis
                     similique perspiciatis dolores deserunt, recusandae eum, consequatur cupiditate,
                     optio debitis laudantium repudiandae magnam reprehenderit reiciendis quam temporibus
