@@ -1,4 +1,4 @@
-const mongoose = require("mongoose")
+const mongoose = require("mongoose");
 
 const PostSchema = new mongoose.Schema(
     {
@@ -18,11 +18,10 @@ const PostSchema = new mongoose.Schema(
         username: {
             type: String,
             required: true,
-            unique: true,
         },
         categories: {
             type: Array,
-            required: false
+            required: false,
         },
     },
     { timestamps: true }
