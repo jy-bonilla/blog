@@ -1,42 +1,32 @@
-import './post.css'
+import './post.css';
+import { Link } from "react-router-dom"
 
-export default function Post() {
+export default function Post({ post }) {
     return (
         <div className='post'>
-            <img className="postImg" src="assets/mountains.png"
-                alt="misty morning over mountains" />
+            {post.photo && (
+                <img className="postImg" src={post.photo}
+                    alt="misty morning over mountains" />
+            )}
             <div className="postInfo">
-                <div className="postCats">
-                    <span className="postCat">Music</span>
-                    <span className="postCat">Life</span>
+                <div className="postCats">{
+                    post.categories.map(c => (
+                        <span className="postCat">{c.name}</span>
+                    ))
+                }
                 </div>
-                <span className="postTitle">
-                    Lorem ipsum dolor
-                </span>
+                <Link to={`/post/${post._id}`} className='link'>
+                    <span className="postTitle">
+                        {post.title}
+                    </span>
+                </Link>
+
                 <hr />
-                <span className="postDate">1 hour ago</span>
+                <span className="postDate">{new Date(post.createdAt).toDateString()}</span>
             </div>
-            <p className='postDesc'>Lorem ipsum, dolor sit amet consectetur
-                adipisicing elit. Reiciendis dicta culpa explicabo, voluptate harum
-                necessitatibus sint sapiente eaque aspernatur!
-                Quisquam corporis asperiores quia mollitia
-                tenetur, debitis molestiae. Totam, quo aliquam.
-                Lorem ipsum, dolor sit amet consectetur
-                adipisicing elit. Reiciendis dicta culpa explicabo, voluptate harum
-                necessitatibus sint sapiente eaque aspernatur!
-                Quisquam corporis asperiores quia mollitia
-                tenetur, debitis molestiae. Totam, quo aliquam.
-                Lorem ipsum, dolor sit amet consectetur
-                adipisicing elit. Reiciendis dicta culpa explicabo, voluptate harum
-                necessitatibus sint sapiente eaque aspernatur!
-                Quisquam corporis asperiores quia mollitia
-                tenetur, debitis molestiae. Totam, quo aliquam.
-                Lorem ipsum, dolor sit amet consectetur
-                adipisicing elit. Reiciendis dicta culpa explicabo, voluptate harum
-                necessitatibus sint sapiente eaque aspernatur!
-                Quisquam corporis asperiores quia mollitia
-                tenetur, debitis molestiae. Totam, quo aliquam.
+            <p className='postDesc'>
+                {post.desc}
             </p>
-        </div>
+        </div >
     )
 }
